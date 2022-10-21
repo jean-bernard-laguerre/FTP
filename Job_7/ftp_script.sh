@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install proftpd
+apt install proftpd-*
 apt install openssh-server
 
 cat proftpd.conf > /etc/proftpd/proftpd.conf
