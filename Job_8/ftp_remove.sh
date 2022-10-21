@@ -1,4 +1,7 @@
 #!/bin/bash
 
-apt purge proftpd
+systemctl stop proftpd
+systemctl stop ssh
+
+apt purge proftpd-*
 apt purge openssh-server
