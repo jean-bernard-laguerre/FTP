@@ -4,7 +4,7 @@ csv_file=$1
 
 while IFS=, read -r  id Prenom Nom Mdp Role
 do
-   sudo useradd -m -p $Mdp $Prenom-$Nom
+   sudo useradd -p $Mdp $Prenom-$Nom
    mkdir home/$Prenom-$Nom
    chown $Prenom-$Nom home/$Prenom-$Nom
    
