@@ -3,5 +3,5 @@
 systemctl stop proftpd
 systemctl stop ssh
 
-apt purge proftpd-*
-apt purge openssh-server
+apt -y purge proftpd-*
+apt -y purge openssh-server
